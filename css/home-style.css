@@ -283,14 +283,13 @@ ul {
 }
 @media (max-width: 47.9375em) {
   .about {
-    margin-top: 8rem;
     padding: 2rem;
     text-align: left;
   }
 }
 @media (max-width: 26.5em) {
   .about {
-    margin-top: 12rem;
+    margin-top: 10rem;
   }
 }
 .about .heading {
