@@ -1,0 +1,64 @@
+@use "./variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    background-color: #eee;
+}
+
+// scrollbar customisation
+::-webkit-scrollbar {
+    width: 0.875rem;
+    height: 0.875rem;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+}
+
+h1 {
+    font-size: clamp(2rem, 1.4074rem + 2.963vw, 4rem);
+}
+
+h2 {
+    font-size: clamp(1.25rem, 1.1019rem + 0.7407vw, 1.75rem);
+}
+
+p {
+    font-size: clamp(0.875rem, 0.838rem + 0.1852vw, 1rem);
+}
+
+a {
+    text-decoration: none;
+    color: variables.$colorNeutralTextDark;
+}
+
+ul {
+    list-style: none;
+}
+
+section {
+    width: 80%;
+    margin: auto;
+}
+
+.btn {
+    border: none;
+    color: variables.$colorNeutralTextDark;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}

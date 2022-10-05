@@ -1,0 +1,66 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 200;
+    top: 0;
+    padding: 1rem 4rem;
+    background-color: #ddd;
+
+    .brandname {
+        font-size: 2rem;
+        font-family: 'Great Vibes', cursive;
+
+        span {
+            color: #666;
+        }
+    }
+
+    .links {
+        display: flex;
+        align-items: center;
+
+        .link {
+
+            &:not(:last-child) {
+                margin-right: 2rem;
+            }
+
+            &.active {
+                padding-bottom: 0.375rem;
+                border-bottom: 2px solid #333;
+            }
+        }
+
+        .contact-links {
+            display: flex;
+            align-items: center;
+
+            &:not(:last-child) {
+                margin-right: 1rem;
+            }
+
+            span {
+                color: #666;
+            }
+
+            .icons {
+                margin-left: 0.5rem;
+
+                a {
+                    display: inline-block;
+                    width: 2rem;
+
+                    &:not(:last-child) {
+                        margin-right: 1rem;
+                    }
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

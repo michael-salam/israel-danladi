@@ -1,0 +1,16 @@
+{
+  "name": "photographer-site-job",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass:home": "sass scss/pages/home.scss css/home-style.css --watch",
+    "compile-sass:portfolio": "sass scss/pages/portfolio.scss css/portfolio-style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.55.0"
+  }
+}
