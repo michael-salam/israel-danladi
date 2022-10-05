@@ -44,11 +44,6 @@ ul {
   list-style: none;
 }
 
-section {
-  width: 80%;
-  margin: auto;
-}
-
 .btn {
   border: none;
   color: #333;
@@ -69,6 +64,11 @@ section {
   top: 0;
   padding: 1rem 4rem;
   background-color: #ddd;
+}
+@media (max-width: 47.9375em) {
+  .navbar {
+    padding: 1rem 2rem;
+  }
 }
 .navbar .brandname {
   font-size: 2rem;
@@ -176,12 +176,21 @@ section {
   display: flex;
   align-items: center;
   height: 70vh;
+  margin: 2rem 1rem;
+}
+@media (max-width: 47.9375em) {
+  .header {
+    flex-direction: column;
+  }
 }
 .header .left {
   flex: 2;
-  padding: 1rem 1rem 0 3rem;
-  text-align: right;
-  height: 50vh;
+}
+@media (max-width: 47.9375em) {
+  .header .left {
+    width: 90%;
+    margin: 12rem auto 0 auto;
+  }
 }
 .header .left .heading .main {
   text-transform: uppercase;
@@ -191,7 +200,6 @@ section {
 .header .left .heading .sub {
   line-height: 1.4;
   font-weight: 600;
-  width: 80%;
   margin-left: auto;
 }
 .header .left .desc {
@@ -209,7 +217,13 @@ section {
   flex: 3;
   padding: 1rem;
   position: relative;
-  height: 50%;
+  height: 100%;
+}
+@media (max-width: 47.9375em) {
+  .header .right {
+    order: -1;
+    width: 100vw;
+  }
 }
 .header .right img {
   position: absolute;
@@ -221,15 +235,38 @@ section {
   top: 3rem;
   width: 20rem;
 }
+@media (max-width: 47.9375em) {
+  .header .right img.img1 {
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15rem;
+  }
+}
 .header .right img.img2 {
   right: 7rem;
   top: 8rem;
   width: 20rem;
 }
+@media (max-width: 47.9375em) {
+  .header .right img.img2 {
+    top: 70%;
+    right: 15%;
+    width: 12rem;
+  }
+}
 .header .right img.img3 {
   bottom: 5rem;
   left: 3rem;
   width: 15rem;
+}
+@media (max-width: 47.9375em) {
+  .header .right img.img3 {
+    bottom: unset;
+    top: 5%;
+    left: 25%;
+    width: 7rem;
+  }
 }
 .header .right img:hover {
   transform: scale(1.02);
@@ -238,10 +275,23 @@ section {
 }
 
 .about {
-  margin-top: 10rem;
+  margin: 5rem auto 0 auto;
   text-align: center;
   background-color: #ddd;
   padding: 3rem 5rem 5rem 5rem;
+  width: 90%;
+}
+@media (max-width: 47.9375em) {
+  .about {
+    margin-top: 8rem;
+    padding: 2rem;
+    text-align: left;
+  }
+}
+@media (max-width: 26.5em) {
+  .about {
+    margin-top: 12rem;
+  }
 }
 .about .heading {
   text-transform: uppercase;
@@ -253,9 +303,14 @@ section {
 }
 
 .reviews {
-  margin-top: 5rem;
   text-align: center;
   width: 90%;
+  margin: 5rem auto;
+}
+@media (max-width: 47.9375em) {
+  .reviews {
+    text-align: left;
+  }
 }
 .reviews .heading {
   text-transform: uppercase;
@@ -266,16 +321,17 @@ section {
   color: #555;
 }
 .reviews .reviews-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  gap: 0.5rem;
   margin-top: 1rem;
 }
 .reviews .reviews-container .review {
-  flex: 1;
   background-color: #ddd;
-  margin: 0 0.5rem;
   padding: 2rem;
   line-height: 1.6;
   text-align: left;
+  width: 100%;
 }
 .reviews .reviews-container .review b {
   display: block;
