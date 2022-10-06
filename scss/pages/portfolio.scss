@@ -3,10 +3,6 @@
 @use "../components/navbar";
 @use "../utils/mixins";
 
-body {
-    overflow: hidden;
-}
-
 .tab-btns {
     margin: 1rem;
     padding-bottom: 0.5rem;
@@ -33,11 +29,14 @@ body {
 }
 
 .images {
-    display: flex;
-    justify-content: space-between;
     margin-top: 0.5rem;
-    transition: all 0.25s ease-in-out;
-    transform: translateX(-0vw);
+    overflow: hidden;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        transition: all 0.25s ease-in-out;
+    }
 
     .category-container {
         display: grid;

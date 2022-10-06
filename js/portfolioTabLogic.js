@@ -1,6 +1,6 @@
 // select all tab buttons in the portrait page
 const tabBtns = document.querySelectorAll(".tab-btn");
-const imagesContainer = document.querySelector(".images");
+const imagesContainer = document.querySelector(".wrapper");
 
 // by default the first tab is active
 tabBtns[0].classList.add("active");

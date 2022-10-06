@@ -175,10 +175,6 @@ ul {
   }
 }
 
-body {
-  overflow: hidden;
-}
-
 .tab-btns {
   margin: 1rem;
   padding-bottom: 0.5rem;
@@ -202,11 +198,13 @@ body {
 }
 
 .images {
+  margin-top: 0.5rem;
+  overflow: hidden;
+}
+.images .wrapper {
   display: flex;
   justify-content: space-between;
-  margin-top: 0.5rem;
   transition: all 0.25s ease-in-out;
-  transform: translateX(0vw);
 }
 .images .category-container {
   display: grid;
