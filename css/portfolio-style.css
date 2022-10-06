@@ -8,6 +8,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.7;
   background-color: #eee;
+  color: #666;
 }
 
 ::-webkit-scrollbar {
@@ -25,10 +26,12 @@ body {
 
 h1 {
   font-size: clamp(2rem, 1.4074rem + 2.963vw, 4rem);
+  color: #333;
 }
 
 h2 {
   font-size: clamp(1.25rem, 1.1019rem + 0.7407vw, 1.75rem);
+  color: #333;
 }
 
 p {
@@ -172,6 +175,10 @@ ul {
   }
 }
 
+body {
+  overflow: hidden;
+}
+
 .tab-btns {
   margin: 1rem;
   padding-bottom: 0.5rem;
@@ -185,19 +192,28 @@ ul {
   display: block;
   font-weight: 400;
 }
+.tab-btns .btn.active {
+  background-color: #666;
+  color: #fff;
+  font-weight: 600;
+}
 .tab-btns .btn:not(:last-child) {
   margin-right: 0.5rem;
 }
-.tab-btns .btn:hover {
-  background-color: #ccc;
-}
 
 .images {
-  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
   margin-top: 0.5rem;
+  transition: all 0.25s ease-in-out;
+  transform: translateX(0vw);
+}
+.images .category-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  min-width: 100vw;
   gap: 0.5rem;
+  padding: 0 1rem;
 }
 .images .img-container img {
   transition: all 0.2s;
