@@ -231,7 +231,7 @@ ul {
 .header .right img {
   position: absolute;
   transition: all 0.5s;
-  opacity: 0.8;
+  opacity: 0.95;
 }
 .header .right img.img1 {
   left: 5rem;
